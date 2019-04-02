@@ -5,8 +5,10 @@
 ## Quick Start
 
 ```bash
-# Run in Docker
+
+# Run in Docker (when placed in the directory containing docker-compose.yml)
 docker-compose up
+
 # use -d flag to run in background
 
 # Tear down
@@ -18,18 +20,12 @@ volumes: ['./:/usr/src/app']
 # To re-build
 docker-compose build
 
-# docker_node-mongo
-
-Pour installer docker-compose :
+# To install docker-compose:
 
 `sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
 
-puis
+then
 
 `sudo chmod +x /usr/local/bin/docker-compose`
 
-Pour composer et run l'image, se placer dans le dossier où se trouver le fichier docker-compose.yml :
-
-`docker-compose up`
-
-Tester l'application sur le localhost.
+```
